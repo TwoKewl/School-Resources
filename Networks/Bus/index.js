@@ -86,11 +86,7 @@ class Path{
 }
 
 var path = new Path(canvas.width / 2 - 200, canvas.width / 2 + 200, canvas.height / 2);
-path.addNode();
-path.addNode();
-path.addNode();
-path.addNode();
-path.addNode();
+for (let i = 0; i < 10; i++) path.addNode();
 
 function tick(){
     clearScreen(0, 0, 0);
